@@ -10,9 +10,11 @@ Thread::~Thread()
     //dtor
 }
 
-
+// Méthode permattant de récupérer tous les messages dans ce fil de discussion
 std::vector<Post*> Thread::Getposts() {
+    // Retourne le résultat de la fonction générique permettant de filtrer des objets
     return Templates::Filterobjects<Post>(
+        // ...en spécifiant que l'objet doit référencer ce fil de discussion pour être valide
         [this](Post* object) { return object->Getthread() == this; }
     );
 }
