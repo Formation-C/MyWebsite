@@ -20,9 +20,9 @@ int main()
 {
     new Category("category test");
 
-    new Thread("Le C++ est-il bon pour la santé?");
-    new Thread("Regardes ces images de développeurs (la 5ème va vous étonner)!");
-    new Thread("Je suis venu, j'ai vu, j'ai codu");
+    new Thread(Category::objects[0], "Le C++ est-il bon pour la santé?");
+    new Thread(Category::objects[0], "Regardes ces images de développeurs (la 5ème va vous étonner)!");
+    new Thread(Category::objects[0], "Je suis venu, j'ai vu, j'ai codu");
 
     new Post(Thread::objects[0], "Mais oui c'est clair!");
     new Post(Thread::objects[0], "Ca ne fait aucun doute!");

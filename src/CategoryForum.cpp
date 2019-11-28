@@ -2,7 +2,7 @@
 
 using namespace Forum;
 
-Category::Category(std::string _name) : name(_name)
+Category::Category(std::string _name) : AbstractCategory(_name)
 {
     objects.push_back(this);
 }
