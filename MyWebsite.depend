@@ -38,3 +38,52 @@
 	<vector>
 	<functional>
 
+1574932446 source:d:\cpptraining\hisfirstproject\mywebsite\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	"Thread.h"
+	"Post.h"
+
+1574932446 d:\cpptraining\hisfirstproject\mywebsite\include\thread.h
+	<iostream>
+	<vector>
+	"Post.h"
+	"Templates.h"
+
+1574932446 d:\cpptraining\hisfirstproject\mywebsite\include\post.h
+	<iostream>
+	<vector>
+	"Thread.h"
+
+1574933792 d:\cpptraining\hisfirstproject\mywebsite\include\templates.h
+	<vector>
+	<functional>
+
+1574863752 source:d:\cpptraining\hisfirstproject\mywebsite\src\abstractcategory.cpp
+	"AbstractCategory.h"
+
+1574863863 d:\cpptraining\hisfirstproject\mywebsite\include\abstractcategory.h
+	<iostream>
+
+1574865178 source:d:\cpptraining\hisfirstproject\mywebsite\src\categoryforum.cpp
+	"CategoryForum.h"
+
+1574865413 d:\cpptraining\hisfirstproject\mywebsite\include\categoryforum.h
+	<AbstractCategory.h>
+	<Thread.h>
+
+1574870550 source:d:\cpptraining\hisfirstproject\mywebsite\src\data.cpp
+	"Data.h"
+
+1574870550 d:\cpptraining\hisfirstproject\mywebsite\include\data.h
+	<vector>
+	"Post.h"
+	"Thread.h"
+
+1574932446 source:d:\cpptraining\hisfirstproject\mywebsite\src\post.cpp
+	"Post.h"
+
+1574932446 source:d:\cpptraining\hisfirstproject\mywebsite\src\templates.cpp
+	"Templates.h"
+
