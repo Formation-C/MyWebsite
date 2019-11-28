@@ -24,6 +24,7 @@ class Thread
         static std::vector<Thread*> objects;
 
         std::vector<Post*> Getposts();
+        bool Haspost(Post* _post);
 
     protected:
 

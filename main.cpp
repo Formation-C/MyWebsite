@@ -37,6 +37,13 @@ int main()
 
     for_each(filteredPosts.begin(), filteredPosts.end(), displayPost);
 
+
+    if (Thread::objects[0]->Haspost(Post::objects[1]))
+        cout << "Post '" << Post::objects[1]->Getcontent() << "' is present in thread titled '" << Thread::objects[0]->Gettitle() << "'" << endl;
+    else
+        cout << "Post '" << Post::objects[1]->Getcontent() << "' is NOT present in thread titled '" << Thread::objects[0]->Gettitle() << "'" << endl;
+
+
     //cout << "Hello world!" << endl;
     return 0;
 }
