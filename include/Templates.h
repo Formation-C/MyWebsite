@@ -9,6 +9,7 @@ namespace Templates
 {
     template<typename T>
     std::vector<T*> Filterobjects(std::function<bool(T*)> validator) {
+        // std::function<bool(T*)> validator => Filterobjects prend en argument une fonction qui prend en argument un obget T* et retourne un bool
         std::vector<T*> result;
 
         //std::vector<T*>::iterator iter, iter_end;

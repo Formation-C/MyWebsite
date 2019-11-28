@@ -13,7 +13,10 @@ Thread::~Thread()
 
 std::vector<Post*> Thread::Getposts() {
     return Templates::Filterobjects<Post>(
+        // fonction lambda
         [this](Post* object) { return object->Getthread() == this; }
+        // [this] : on capture le contexte de this pour le passer à la function par la suite
+        //
     );
 }
 
