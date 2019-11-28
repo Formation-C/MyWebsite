@@ -30,16 +30,23 @@ bool Thread::Haspost(Post* _post){
 
     bool result = false;
 
+#if 0
     auto Threadpost = this->Getposts();
 
     std::vector<Post*>::iterator iter, iter_end;
-    //for (iter = Post::objects.begin(), iter_end = Post::objects.end(); iter != iter_end; ++iter) {
+
     for (iter = Threadpost.begin(), iter_end = Threadpost.end(); iter != iter_end; ++iter) {
-        //Post* post = *iter;
+
         if (*iter == _post) {
             result = true;
         }
     }
+
+    //other method
+#else
+        if (_post->Getthread() == this)
+            result = true;
+#endif
 
     return result;
 }
