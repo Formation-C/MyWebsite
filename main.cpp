@@ -9,7 +9,7 @@
 using namespace std;
 
 void displayThread(Thread* thread) {
-    cout << "Thread titled '" << thread->Gettitle() << "'" << endl;
+    cout << "Thread titled '" << thread->Gettitle() << "' in category titled '" << thread->Getcategory()->getName() << "'" << endl;
 }
 
 void displayPost(Post* post) {

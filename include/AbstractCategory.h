@@ -9,6 +9,7 @@ class AbstractCategory
         AbstractCategory();
         AbstractCategory(std::string _name);
         virtual ~AbstractCategory();
+        std::string getName() { return name; }
 
         std::string name;
 
