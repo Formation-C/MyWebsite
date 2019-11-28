@@ -38,16 +38,17 @@
 	<vector>
 	<functional>
 
-1574932446 source:d:\cpptraining\hisfirstproject\mywebsite\main.cpp
+1574940670 source:d:\cpptraining\hisfirstproject\mywebsite\main.cpp
 	<iostream>
 	<vector>
 	<algorithm>
 	"Thread.h"
 	"Post.h"
 
-1574932446 d:\cpptraining\hisfirstproject\mywebsite\include\thread.h
+1574945852 d:\cpptraining\hisfirstproject\mywebsite\include\thread.h
 	<iostream>
 	<vector>
+	"CategoryForum.h"
 	"Post.h"
 	"Templates.h"
 
@@ -56,20 +57,20 @@
 	<vector>
 	"Thread.h"
 
-1574933792 d:\cpptraining\hisfirstproject\mywebsite\include\templates.h
+1574938922 d:\cpptraining\hisfirstproject\mywebsite\include\templates.h
 	<vector>
 	<functional>
 
-1574937529 source:d:\cpptraining\hisfirstproject\mywebsite\src\abstractcategory.cpp
+1574946080 source:d:\cpptraining\hisfirstproject\mywebsite\src\abstractcategory.cpp
 	"AbstractCategory.h"
 
-1574938240 d:\cpptraining\hisfirstproject\mywebsite\include\abstractcategory.h
+1574946161 d:\cpptraining\hisfirstproject\mywebsite\include\abstractcategory.h
 	<iostream>
 
-1574938168 source:d:\cpptraining\hisfirstproject\mywebsite\src\categoryforum.cpp
+1574946080 source:d:\cpptraining\hisfirstproject\mywebsite\src\categoryforum.cpp
 	"CategoryForum.h"
 
-1574938200 d:\cpptraining\hisfirstproject\mywebsite\include\categoryforum.h
+1574946236 d:\cpptraining\hisfirstproject\mywebsite\include\categoryforum.h
 	<iostream>
 	<vector>
 	<AbstractCategory.h>
@@ -103,6 +104,6 @@
 1574869984 d:\cpptraining\hisfirstproject\mywebsite\include\user.h
 	<iostream>
 
-1574935866 source:d:\cpptraining\hisfirstproject\mywebsite\src\thread.cpp
+1574945852 source:d:\cpptraining\hisfirstproject\mywebsite\src\thread.cpp
 	"Thread.h"
 

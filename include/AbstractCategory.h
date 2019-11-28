@@ -7,6 +7,7 @@ class AbstractCategory
 {
     public:
         AbstractCategory();
+        AbstractCategory(std::string _name);
         virtual ~AbstractCategory();
 
         std::string name;

@@ -1,6 +1,6 @@
 #include "Thread.h"
 
-Thread::Thread(std::string _title) : title(_title)
+Thread::Thread(Category* _category, std::string _title) : category(_category), title(_title)
 {
     objects.push_back(this);
 }

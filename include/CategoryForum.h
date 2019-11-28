@@ -5,23 +5,24 @@
 #include <vector>
 
 #include <AbstractCategory.h>
-#include <Thread.h>
+
+class Thread;
 
 namespace Forum {
 
     class Category : public AbstractCategory
     {
         public:
-            Category();
+            Category(std::string _name);
             virtual ~Category();
 
             void turnOnOff();
-            void getThreads();
             void hasThread(Thread _thread);
+            std::string getName() { return name; };
 
             static std::vector<Category*> objects;
 
-//            std::vector<Thread*> getThreads();
+            std::vector<Thread*> getThreads();
 
         protected:
 
@@ -30,3 +31,5 @@ namespace Forum {
 
 }
 #endif // CATEGORYFORUM_H
+
+#include <Thread.h>

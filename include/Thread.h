@@ -6,12 +6,14 @@ class Post;
 
 #include <iostream>
 #include <vector>
+#include "CategoryForum.h"
 
+using namespace Forum;
 
 class Thread
 {
     public:
-        Thread(std::string title);
+        Thread(Category* _category, std::string title);
         virtual ~Thread();
 
         int Getid() { return id; }
@@ -20,6 +22,7 @@ class Thread
         void Settitle(std::string val) { title = val; }
         bool Getlocked() { return locked; }
         void Setlocked(bool val) { locked = val; }
+        Category* Getcategory() { return category; }
 
         static std::vector<Thread*> objects;
 
@@ -31,9 +34,11 @@ class Thread
         int id;
         std::string title;
         bool locked;
+        Category* category;
 };
 
 #include "Post.h"
 #include "Templates.h"
+
 
 #endif // THREAD_H

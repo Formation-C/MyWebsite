@@ -18,6 +18,8 @@ void displayPost(Post* post) {
 
 int main()
 {
+    new Category("category test");
+
     new Thread("Le C++ est-il bon pour la santé?");
     new Thread("Regardes ces images de développeurs (la 5ème va vous étonner)!");
     new Thread("Je suis venu, j'ai vu, j'ai codu");
@@ -36,6 +38,11 @@ int main()
     vector<Post*> filteredPosts = Thread::objects[0]->Getposts();
 
     for_each(filteredPosts.begin(), filteredPosts.end(), displayPost);
+
+    cout << "begin filteredThreads " << endl;
+    vector<Thread*> filteredThreads = Category::objects[0]->getThreads();
+    cout << "print filteredThreads " << endl;
+    for_each(filteredThreads.begin(), filteredThreads.end(), displayThread);
 
     //cout << "Hello world!" << endl;
     return 0;
