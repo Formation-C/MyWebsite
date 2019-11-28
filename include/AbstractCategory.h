@@ -11,6 +11,8 @@ class AbstractCategory
 
         std::string name;
 
+        virtual void turnOnOff() = 0;
+
     protected:
 
     private:

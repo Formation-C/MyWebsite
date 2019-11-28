@@ -60,16 +60,18 @@
 	<vector>
 	<functional>
 
-1574863752 source:d:\cpptraining\hisfirstproject\mywebsite\src\abstractcategory.cpp
+1574937529 source:d:\cpptraining\hisfirstproject\mywebsite\src\abstractcategory.cpp
 	"AbstractCategory.h"
 
-1574863863 d:\cpptraining\hisfirstproject\mywebsite\include\abstractcategory.h
+1574938240 d:\cpptraining\hisfirstproject\mywebsite\include\abstractcategory.h
 	<iostream>
 
-1574865178 source:d:\cpptraining\hisfirstproject\mywebsite\src\categoryforum.cpp
+1574938168 source:d:\cpptraining\hisfirstproject\mywebsite\src\categoryforum.cpp
 	"CategoryForum.h"
 
-1574865413 d:\cpptraining\hisfirstproject\mywebsite\include\categoryforum.h
+1574938200 d:\cpptraining\hisfirstproject\mywebsite\include\categoryforum.h
+	<iostream>
+	<vector>
 	<AbstractCategory.h>
 	<Thread.h>
 
@@ -86,4 +88,21 @@
 
 1574932446 source:d:\cpptraining\hisfirstproject\mywebsite\src\templates.cpp
 	"Templates.h"
+
+1574864914 source:d:\cpptraining\hisfirstproject\mywebsite\src\categorycalendar.cpp
+	"CategoryCalendar.h"
+
+1574865417 d:\cpptraining\hisfirstproject\mywebsite\include\categorycalendar.h
+	<AbstractCategory.h>
+	<Event.h>
+
+1574869962 d:\cpptraining\hisfirstproject\mywebsite\include\event.h
+	<User.h>
+	<iostream>
+
+1574869984 d:\cpptraining\hisfirstproject\mywebsite\include\user.h
+	<iostream>
+
+1574935866 source:d:\cpptraining\hisfirstproject\mywebsite\src\thread.cpp
+	"Thread.h"
 
