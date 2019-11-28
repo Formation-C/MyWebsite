@@ -33,13 +33,7 @@ int main()
 
     for_each(Thread::objects.begin(), Thread::objects.end(), displayThread);
 
-    std::vector<Post*>::iterator iter, iter_end;
-    for (iter = Post::objects.begin(), iter_end = Post::objects.end(); iter != iter_end; ++iter) {
-        Post* post = *iter;
-        if (post->Getthread() == Thread::objects[2]) {
-            displayPost(*iter);
-        }
-    }
+    Thread::objects[0]->Getposts();
 
     //cout << "Hello world!" << endl;
     return 0;

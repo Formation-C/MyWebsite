@@ -1,9 +1,11 @@
 #ifndef POST_H
 #define POST_H
 
+// Forward declaration
+class Thread;
+
 #include <iostream>
 #include <vector>
-#include "Thread.h"
 
 
 class Post
@@ -23,8 +25,6 @@ class Post
         Thread* Getthread() { return thread; }
         void Setthread(Thread* val) { thread = val; }
 
-        static std::vector<Thread*> Getthreads();
-
         static std::vector<Post*> objects;
 
     protected:
@@ -36,5 +36,7 @@ class Post
         double date;
         Thread* thread;
 };
+
+#include "Thread.h"
 
 #endif // POST_H

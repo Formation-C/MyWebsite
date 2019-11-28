@@ -1,6 +1,9 @@
 #ifndef THREAD_H
 #define THREAD_H
 
+// Forward declarations
+class Post;
+
 #include <iostream>
 #include <vector>
 
@@ -20,6 +23,8 @@ class Thread
 
         static std::vector<Thread*> objects;
 
+        void Getposts();
+
     protected:
 
     private:
@@ -27,5 +32,7 @@ class Thread
         std::string title;
         bool locked;
 };
+
+#include "Post.h"
 
 #endif // THREAD_H
