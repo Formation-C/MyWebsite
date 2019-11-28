@@ -23,7 +23,7 @@ class Thread
 
         static std::vector<Thread*> objects;
 
-        void Getposts();
+        std::vector<Post*> Getposts();
 
     protected:
 

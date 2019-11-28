@@ -33,7 +33,9 @@ int main()
 
     for_each(Thread::objects.begin(), Thread::objects.end(), displayThread);
 
-    Thread::objects[0]->Getposts();
+    vector<Post*> filteredPosts = Thread::objects[0]->Getposts();
+
+    for_each(filteredPosts.begin(), filteredPosts.end(), displayPost);
 
     //cout << "Hello world!" << endl;
     return 0;
