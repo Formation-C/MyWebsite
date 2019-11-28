@@ -34,5 +34,6 @@ class Thread
 };
 
 #include "Post.h"
+#include "Templates.h"
 
 #endif // THREAD_H

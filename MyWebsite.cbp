@@ -36,10 +36,12 @@
 		</Compiler>
 		<Unit filename="include/Data.h" />
 		<Unit filename="include/Post.h" />
+		<Unit filename="include/Templates.h" />
 		<Unit filename="include/Thread.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Data.cpp" />
 		<Unit filename="src/Post.cpp" />
+		<Unit filename="src/Templates.cpp" />
 		<Unit filename="src/Thread.cpp" />
 		<Extensions>
 			<code_completion />

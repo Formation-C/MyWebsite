@@ -12,16 +12,9 @@ Thread::~Thread()
 
 
 std::vector<Post*> Thread::Getposts() {
-    std::vector<Post*> result;
-
-    std::vector<Post*>::iterator iter, iter_end;
-    for (iter = Post::objects.begin(), iter_end = Post::objects.end(); iter != iter_end; ++iter) {
-        Post* post = *iter;
-        if (post->Getthread() == Thread::objects[2]) {
-            result.push_back(post);
-        }
-    }
-    return result;
+    return Templates::Filterobjects<Post>(
+        [this](Post* object) { return object->Getthread() == this; }
+    );
 }
 
 std::vector<Thread*> Thread::objects;
