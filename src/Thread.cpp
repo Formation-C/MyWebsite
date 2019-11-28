@@ -17,7 +17,7 @@ std::vector<Post*> Thread::Getposts() {
     std::vector<Post*>::iterator iter, iter_end;
     for (iter = Post::objects.begin(), iter_end = Post::objects.end(); iter != iter_end; ++iter) {
         Post* post = *iter;
-        if (post->Getthread() == Thread::objects[2]) {
+        if (post->Getthread() == this) {
             result.push_back(post);
         }
     }
