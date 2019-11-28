@@ -7,6 +7,8 @@ class Thread;
 #include <iostream>
 #include <vector>
 
+#include "Thread.h"
+
 
 class Post
 {
@@ -36,7 +38,5 @@ class Post
         double date;
         Thread* thread;
 };
-
-#include "Thread.h"
 
 #endif // POST_H

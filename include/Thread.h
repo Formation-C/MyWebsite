@@ -33,6 +33,4 @@ class Thread
         bool locked;
 };
 
-#include "Post.h"
-
 #endif // THREAD_H

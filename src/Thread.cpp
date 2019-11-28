@@ -1,4 +1,6 @@
 #include "Thread.h"
+#include "Post.h"
+
 
 Thread::Thread(std::string _title) : title(_title)
 {

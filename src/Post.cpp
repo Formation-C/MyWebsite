@@ -1,4 +1,6 @@
 #include "Post.h"
+#include "Thread.h"
+
 
 Post::Post(Thread* _thread, std::string _content) : thread(_thread), content(_content)
 {
