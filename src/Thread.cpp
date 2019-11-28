@@ -10,12 +10,14 @@ Thread::~Thread()
     //dtor
 }
 
-
+// Mï¿½thode permattant de rï¿½cupï¿½rer tous les messages dans ce fil de discussion
 std::vector<Post*> Thread::Getposts() {
+    // Retourne le rï¿½sultat de la fonction gï¿½nï¿½rique permettant de filtrer des objets
     return Templates::Filterobjects<Post>(
+        // ...en spï¿½cifiant que l'objet doit rï¿½fï¿½rencer ce fil de discussion pour ï¿½tre valide
         // fonction lambda
         [this](Post* object) { return object->Getthread() == this; }
-        // [this] : on capture le contexte de this pour le passer à la function par la suite
+        // [this] : on capture le contexte de this pour le passer ï¿½ la function par la suite
         //
     );
 }
