@@ -8,7 +8,7 @@
 namespace Templates
 {
     template<typename T>
-    std::vector<T*> Filterobjects(std::function<bool(T*)> validator) {
+    std::vector<T*> Filterobjects(std::function<bool(T*)> validator) { // validator est une function qui passe dans la filterobjects.  (replace)
         std::vector<T*> result;
 
         //std::vector<T*>::iterator iter, iter_end;
